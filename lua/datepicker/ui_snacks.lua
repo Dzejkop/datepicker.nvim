@@ -305,7 +305,7 @@ function M.open(opts)
   }
 
   vim.bo[buf].modifiable = false
-  vim.bo[buf].readonly = true
+  vim.bo[buf].readonly = false
 
   set_keymaps(ctx)
   render(ctx)
